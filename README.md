@@ -37,7 +37,7 @@ A Node application for authentication using typescript,express and mongoDB
 4. Starts the production server
    
    ```bash
-    npm run prod
+    npm run start
     ```
 
 5. Runs the linter.
