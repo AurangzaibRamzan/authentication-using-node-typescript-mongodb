@@ -2,11 +2,11 @@
   "name": "authentication-node-typescript",
   "version": "1.0.0",
   "description": "handling Authentication and Authorization",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./index.ts",
-    "prod": "tsc && node ./build/index.js",
+    "start": "tsc && node ./build/index.js",
     "lint": "eslint . --ext .ts,.tsx",
     "lint-fix": "eslint --fix . --ext .ts,.tsx"
   },
