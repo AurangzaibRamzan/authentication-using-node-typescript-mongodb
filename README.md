@@ -1,4 +1,4 @@
-<h1 align="center">authentication-node-typescript</h1>
+<h1 align="center">Authentication using nodejs,typescript and mongodb</h1>
 
 ## :information_source: About
 A Node application for authentication using typescript,express and mongoDB
@@ -40,7 +40,7 @@ A Node application for authentication using typescript,express and mongoDB
     npm run prod
     ```
 
-    5. Runs the linter.
+5. Runs the linter.
    
    ```bash
     npm run lint
