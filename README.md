@@ -50,6 +50,10 @@ A Node application for authentication using typescript,express and mongoDB
     npm run lint-fix
     ```
 
+## :twisted_rightwards_arrows:: Routes
+
+1. http://localhost:3000/user/signup
+2. http://localhost:3000/user/login
 
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
