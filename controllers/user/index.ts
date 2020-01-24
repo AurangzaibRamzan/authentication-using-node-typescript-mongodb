@@ -1,5 +1,9 @@
 import UserModel from '../../models/user';
 
+interface SignupArgsType {
+  email: string;
+  password: string;
+}
 
 export default class UserController {
   model: any;
@@ -13,8 +17,10 @@ export default class UserController {
     return true;
   }
 
-  static signupUser(): boolean {
-    console.log('signupUser');
+  static signupUser(args: SignupArgsType): boolean {
+    if (!args) return false;
+    const { email, password } = args;
+    console.log(email, password);
     return true;
   }
 }

@@ -1,4 +1,5 @@
 import express from 'express';
+import _ from 'lodash';
 
 import UserController from '../../controllers/user';
 
@@ -10,7 +11,8 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/signup', async (req, res) => {
-  UserController.signupUser();
+  const args = _.get(req, 'body');
+  UserController.signupUser(args);
   res.status(200).send(true);
 });
 

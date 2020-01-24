@@ -5,6 +5,8 @@ import Database from './utils/database';
 
 const port = process.env.PORT || 3000;
 const app = express();
+app.use(express.json());
+
 Database();
 
 app.use('/', Routes);
