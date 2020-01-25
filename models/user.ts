@@ -4,11 +4,15 @@ import bcrypt from 'bcrypt';
 interface EncryptPassword {
   (encryptPassword: string): Promise<string>;
 }
+interface Authenticate {
+  (plainTextPassword: string): Promise<boolean>;
+}
 
 interface UserType extends mongoose.Document {
   usernname: string;
   password: string;
   encryptPassword: EncryptPassword;
+  authenticate: Authenticate;
 }
 
 const UserSchema = new mongoose.Schema({
@@ -37,6 +41,7 @@ UserSchema.pre<UserType>('save', async function encrypt(next) {
   }
   return next();
 });
+
 
 UserSchema.methods = {
   async authenticate(plainTextPassword: string): Promise<boolean> {

@@ -55,6 +55,8 @@ A Node application for authentication using typescript,express and mongoDB
 
 1. http://localhost:3000/user/signup
 2. http://localhost:3000/user/login
+3. http://localhost:3000/user/    (with token in header i.e header :{token:""})
+4. http://localhost:3000/user/changepassword
 
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
